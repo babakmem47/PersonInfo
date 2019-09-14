@@ -21,6 +21,6 @@ namespace PersonInfo.Models
 
         public Semat Semat { get; set; }
 
-        public byte SematId { get; set; }
+        public byte? SematId { get; set; }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System.Data.Entity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using PersonInfo.EntityConfigurations;
 
 namespace PersonInfo.Models
 {
@@ -8,6 +9,14 @@ namespace PersonInfo.Models
         public DbSet<Person> Persons { get; set; }
 
         public DbSet<Semat> Semats { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Configurations.Add(new PersonConfiguration());
+            modelBuilder.Configurations.Add(new SematConfiguration());
+
+            base.OnModelCreating(modelBuilder);
+        }
 
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)

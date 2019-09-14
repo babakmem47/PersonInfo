@@ -161,6 +161,8 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="EntityConfigurations\PersonConfiguration.cs" />
+    <Compile Include="EntityConfigurations\SematConfiguration.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -175,6 +177,10 @@
     <Compile Include="Migrations\201909140354089_PopulateSemat.cs" />
     <Compile Include="Migrations\201909140354089_PopulateSemat.Designer.cs">
       <DependentUpon>201909140354089_PopulateSemat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201909140438515_AddFluentApiForPersonAndSemat.cs" />
+    <Compile Include="Migrations\201909140438515_AddFluentApiForPersonAndSemat.Designer.cs">
+      <DependentUpon>201909140438515_AddFluentApiForPersonAndSemat.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -262,6 +268,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201909140354089_PopulateSemat.resx">
       <DependentUpon>201909140354089_PopulateSemat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909140438515_AddFluentApiForPersonAndSemat.resx">
+      <DependentUpon>201909140438515_AddFluentApiForPersonAndSemat.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
